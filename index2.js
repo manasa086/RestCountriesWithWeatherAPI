@@ -69,7 +69,7 @@ async function weatherCapital(name, capital) {
             str += capital.charAt(i);
         }
     }
-    let cap_URL = 'http://api.openweathermap.org/data/2.5/weather?q=' + str + '&appid=5a457becd60a3cddf9f53f98a73fc7c5&units=metric';
+    let cap_URL = 'https://api.openweathermap.org/data/2.5/weather?q=' + str + '&appid=5a457becd60a3cddf9f53f98a73fc7c5&units=metric';
     try {
         let response = await fetch(cap_URL)
         let result = await response.json();
