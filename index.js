@@ -46,7 +46,7 @@ function weather(name, capital) {
     // console.log(str);
     // alert(name);
     //alert(capital);
-    let con_URL = 'http://api.openweathermap.org/data/2.5/weather?q=' + str + '&appid=5a457becd60a3cddf9f53f98a73fc7c5&units=metric';
+    let con_URL = 'https://api.openweathermap.org/data/2.5/weather?q=' + str + '&appid=5a457becd60a3cddf9f53f98a73fc7c5&units=metric';
     //console.log(con_URL);
     fetch(con_URL).then((response) => {
         if (!response.ok)

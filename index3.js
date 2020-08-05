@@ -8,7 +8,7 @@ document.getElementById("search").addEventListener('change', function() {
             text_URL += text.charAt(i);
         }
     }
-    let URL = 'http://www.omdbapi.com/?apikey=6fe840a6&t=' + text_URL;
+    let URL = 'https://www.omdbapi.com/?apikey=6fe840a6&t=' + text_URL;
     fetch(URL).then((response) => {
         return response.json();
     }).then((result) => {
